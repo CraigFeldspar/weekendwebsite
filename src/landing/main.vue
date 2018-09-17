@@ -69,7 +69,7 @@ export default {
             }
 
             result.push({
-                "Equipe": this.teamsData[i].name,
+                "Équipe": this.teamsData[i].name,
                 "Couleur": this.teamsData[i].color,
                 "Membres": this.formatMembers(this.teamsData[i].persons),
                 "Points des jeux": this.teamsData[i].points,
