@@ -95,11 +95,11 @@ export default {
         return result;
     },
     "updateData": function() {
-        this.axios.get("http://wanaweekend.corentin-baur.fr/api/announces/").then((response) => {
+        this.axios.get("https://wanaweekend.corentin-baur.fr/api/announces/").then((response) => {
           this.announcesData = response.data;
           this.announces = this.formatAnnounces(this.announcesData);
         });
-        this.axios.get("http://wanaweekend.corentin-baur.fr/api/teams/").then((response) => {
+        this.axios.get("https://wanaweekend.corentin-baur.fr/api/teams/").then((response) => {
           this.teamsData = response.data;
           this.teams = this.formatTeams(this.teamsData);
         });
